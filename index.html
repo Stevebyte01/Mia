@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mia - For Mama</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Login Screen -->
+    <div id="loginScreen" class="screen active">
+        <div class="login-container">
+            <h1 class="app-title">Mia</h1>
+            <p class="subtitle">For the most amazing Mama ❤️</p>
+            <form id="loginForm">
+                <input type="text" id="username" placeholder="Username" required>
+                <input type="password" id="password" placeholder="Password" required>
+                <button type="submit">Enter</button>
+                <p id="errorMsg" class="error-msg"></p>
+            </form>
+        </div>
+    </div>
+
+    <!-- Quote Screen -->
+    <div id="quoteScreen" class="screen">
+        <div class="quote-container">
+            <div class="quote-card">
+                <img id="randomImage" class="random-image" src="" alt="Our memories" />
+                <div class="quote-icon">✨</div>
+                <p id="quoteText" class="quote-text"></p>
+                <div class="quote-footer">
+                    <span id="quoteType" class="quote-type"></span>
+                    <button id="nextQuote" class="next-btn">Next Quote →</button>
+                </div>
+            </div>
+            <button id="logoutBtn" class="logout-btn">Logout</button>
+        </div>
+    </div>
+
+    <script src="quotes.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
